@@ -24,6 +24,9 @@
 		F96D709E19F24C9D00BCE44F /* KidsiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F96D709D19F24C9D00BCE44F /* KidsiTests.m */; };
 		F990C5E519F4F4D900CACBB3 /* ParentListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F990C5E419F4F4D900CACBB3 /* ParentListCollectionViewController.m */; };
 		F999960E19F620C000760E89 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999960D19F620C000760E89 /* MultipeerConnectivity.framework */; };
+		F999965619F6425000760E89 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999965519F6425000760E89 /* MobileCoreServices.framework */; };
+		F999965819F6426500760E89 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999965719F6426500760E89 /* AVFoundation.framework */; };
+		F999965A19F6427000760E89 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999965919F6427000760E89 /* CoreVideo.framework */; };
 		F99B595B19F2772E0061DA3E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99B595A19F2772E0061DA3E /* MenuViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		F990C5E319F4F4D900CACBB3 /* ParentListCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentListCollectionViewController.h; sourceTree = "<group>"; };
 		F990C5E419F4F4D900CACBB3 /* ParentListCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentListCollectionViewController.m; sourceTree = "<group>"; };
 		F999960D19F620C000760E89 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		F999965519F6425000760E89 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F999965719F6426500760E89 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F999965919F6427000760E89 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		F99B595919F2772E0061DA3E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		F99B595A19F2772E0061DA3E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F999965A19F6427000760E89 /* CoreVideo.framework in Frameworks */,
+				F999965819F6426500760E89 /* AVFoundation.framework in Frameworks */,
+				F999965619F6425000760E89 /* MobileCoreServices.framework in Frameworks */,
 				F999960E19F620C000760E89 /* MultipeerConnectivity.framework in Frameworks */,
 				F96D707219F24C9D00BCE44F /* CoreGraphics.framework in Frameworks */,
 				F96D707419F24C9D00BCE44F /* UIKit.framework in Frameworks */,
@@ -112,6 +121,9 @@
 		F96D706E19F24C9D00BCE44F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F999965919F6427000760E89 /* CoreVideo.framework */,
+				F999965719F6426500760E89 /* AVFoundation.framework */,
+				F999965519F6425000760E89 /* MobileCoreServices.framework */,
 				F999960D19F620C000760E89 /* MultipeerConnectivity.framework */,
 				F96D706F19F24C9D00BCE44F /* Foundation.framework */,
 				F96D707119F24C9D00BCE44F /* CoreGraphics.framework */,

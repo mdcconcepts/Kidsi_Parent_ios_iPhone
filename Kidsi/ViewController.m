@@ -18,27 +18,44 @@
 - (void)viewDidLoad
 {
    
-    [self.userNameTextField setLeftViewMode:UITextFieldViewModeAlways];
+   // [UIApplication sharedApplication].statusBarHidden=TRUE;
     
-    self.userNameTextField.leftView= [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"username.png"]];
-    self.userNameTextField.leftView.frame=CGRectMake(0, 0,26, 30);
-    //self.userNameTextField.borderStyle=UITextBorderStyleLine;
-    self.userNameTextField.layer.cornerRadius=14.0f;
-    self.userNameTextField.layer.borderColor=[UIColor blackColor].CGColor;
-    self.userNameTextField.layer.borderWidth=0.1f;
+    
+    
+    
+    [self.userNameTextField setLeftViewMode:UITextFieldViewModeAlways];
+    self.userNameTextField.leftView= [[UIView alloc] initWithFrame:CGRectMake(0, 0,30, 30)];
+    UIImageView *username=[[UIImageView alloc]initWithFrame:CGRectMake(3, 3,24, 24)];
+    username.image=[UIImage imageNamed:@"username.png"];
+    
+   // self.userNameTextField.leftView.frame=CGRectMake(0, 0,30, 30);
+    self.userNameTextField.borderStyle=UITextBorderStyleNone;
+    self.userNameTextField.layer.cornerRadius=16.0f;
+    self.userNameTextField.layer.borderColor=[UIColor whiteColor].CGColor;
+    self.userNameTextField.layer.borderWidth=0.2f;
+    [self.userNameTextField.leftView addSubview:username];
     
     
     
     [self.passwordTextField setLeftViewMode:UITextFieldViewModeAlways];
+    self.passwordTextField.leftView= [[UIView alloc] init];
+    UIImageView *password=[[UIImageView alloc]initWithFrame:CGRectMake(3, 3,24, 24)];
+    password.image=[UIImage imageNamed:@"passward.png"];
     
-    self.passwordTextField.leftView= [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"passward.png"]];
-    self.passwordTextField.leftView.frame=CGRectMake(0, 0,26, 30);
+    self.passwordTextField.leftView.frame=CGRectMake(0, 0,30, 30);
     //self.userNameTextField.borderStyle=UITextBorderStyleLine;
-    self.passwordTextField.layer.cornerRadius=14.0f;
-    self.passwordTextField.layer.borderColor=[UIColor blackColor].CGColor;
-    self.passwordTextField.layer.borderWidth=0.1f;
+    self.passwordTextField.layer.cornerRadius=16.0f;
+    self.passwordTextField.layer.borderColor=[UIColor whiteColor].CGColor;
+    self.passwordTextField.layer.borderWidth=0.2f;
     
-
+    
+    [self.passwordTextField.leftView addSubview:password];
+    
+   // self.passwordTextField.leftView= [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"passward.png"]];
+   // self.passwordTextField.leftView.frame=CGRectMake(0, 0,26, 30);
+    //self.userNameTextField.borderStyle=UITextBorderStyleLine;
+   
+   
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

@@ -8,7 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MenuViewController : UIViewController
+@interface MenuViewController : UIViewController<UIGestureRecognizerDelegate,UINavigationBarDelegate>
+{
+    UIView *menuDrawer;
+
+}
+
+
+@property(readonly,nonatomic)UISwipeGestureRecognizer *openRecognizer,*closeRecognizer;
+@property(readonly,nonatomic)int menuDrawerX,menuDrawerWidth;
+
+
+
+-(id)init;
+- (IBAction)MenuButon:(id)sender;
+-(void)handleSwipe:(UISwipeGestureRecognizer *)recognizer;
+-(void)drawerAnimation;
 
 
 @property(nonatomic,weak)IBOutlet UIImageView *imageView;

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ParentListCollectionViewController : UICollectionViewController<UICollectionViewDataSource,UICollectionViewDelegate>
-
+@interface ParentListCollectionViewController : UICollectionViewController<UICollectionViewDataSource,UICollectionViewDelegate,UINavigationBarDelegate>
+//-(id)initWithCollectionViewLayout:(UICollectionViewLayout *)layout;
+-(id)init;
 @end

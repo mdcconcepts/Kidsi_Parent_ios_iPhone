@@ -28,6 +28,9 @@
 		F999965819F6426500760E89 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999965719F6426500760E89 /* AVFoundation.framework */; };
 		F999965A19F6427000760E89 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999965919F6427000760E89 /* CoreVideo.framework */; };
 		F99B595B19F2772E0061DA3E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99B595A19F2772E0061DA3E /* MenuViewController.m */; };
+		F9A6FA351A0201BD004AE33C /* TecherInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6FA341A0201BD004AE33C /* TecherInfoViewController.m */; };
+		F9A6FA381A020E17004AE33C /* ParentProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6FA371A020E17004AE33C /* ParentProfileViewController.m */; };
+		F9A7551A1A011C4B001E437F /* SchoolInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A755191A011C4B001E437F /* SchoolInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,12 @@
 		F999965919F6427000760E89 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		F99B595919F2772E0061DA3E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		F99B595A19F2772E0061DA3E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MenuViewController.m; sourceTree = "<group>"; };
+		F9A6FA331A0201BD004AE33C /* TecherInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TecherInfoViewController.h; sourceTree = "<group>"; };
+		F9A6FA341A0201BD004AE33C /* TecherInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TecherInfoViewController.m; sourceTree = "<group>"; };
+		F9A6FA361A020E17004AE33C /* ParentProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentProfileViewController.h; sourceTree = "<group>"; };
+		F9A6FA371A020E17004AE33C /* ParentProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentProfileViewController.m; sourceTree = "<group>"; };
+		F9A755181A011C4B001E437F /* SchoolInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolInfoViewController.h; sourceTree = "<group>"; };
+		F9A755191A011C4B001E437F /* SchoolInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +168,12 @@
 				F99B595A19F2772E0061DA3E /* MenuViewController.m */,
 				F990C5E319F4F4D900CACBB3 /* ParentListCollectionViewController.h */,
 				F990C5E419F4F4D900CACBB3 /* ParentListCollectionViewController.m */,
+				F9A755181A011C4B001E437F /* SchoolInfoViewController.h */,
+				F9A755191A011C4B001E437F /* SchoolInfoViewController.m */,
+				F9A6FA331A0201BD004AE33C /* TecherInfoViewController.h */,
+				F9A6FA341A0201BD004AE33C /* TecherInfoViewController.m */,
+				F9A6FA361A020E17004AE33C /* ParentProfileViewController.h */,
+				F9A6FA371A020E17004AE33C /* ParentProfileViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -281,6 +296,9 @@
 			files = (
 				F96D708919F24C9D00BCE44F /* ViewController.m in Sources */,
 				F96D708019F24C9D00BCE44F /* AppDelegate.m in Sources */,
+				F9A6FA381A020E17004AE33C /* ParentProfileViewController.m in Sources */,
+				F9A7551A1A011C4B001E437F /* SchoolInfoViewController.m in Sources */,
+				F9A6FA351A0201BD004AE33C /* TecherInfoViewController.m in Sources */,
 				F96D707C19F24C9D00BCE44F /* main.m in Sources */,
 				F99B595B19F2772E0061DA3E /* MenuViewController.m in Sources */,
 				F990C5E519F4F4D900CACBB3 /* ParentListCollectionViewController.m in Sources */,
@@ -418,10 +436,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kidsi/Kidsi-Prefix.pch";
+				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "Kidsi/Kidsi-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -431,10 +452,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kidsi/Kidsi-Prefix.pch";
+				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "Kidsi/Kidsi-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

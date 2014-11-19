@@ -43,14 +43,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    //[UIView setAnimationsEnabled:YES];
     
     
     UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0,320, 20)];
     view.backgroundColor=[UIColor darkGrayColor];
     [self.view addSubview:view];
-    
-
     self.navigationController.navigationBarHidden=FALSE;
    // self.navigationController.toolbarHidden=FALSE;
     self.navigationController.navigationBar.barTintColor=[UIColor darkGrayColor];

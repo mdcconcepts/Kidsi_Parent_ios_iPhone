@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F90CE8A61A0C8C1500A7F0A4 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F90CE8A51A0C8C1500A7F0A4 /* ChatViewController.m */; };
 		F96D707019F24C9D00BCE44F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96D706F19F24C9D00BCE44F /* Foundation.framework */; };
 		F96D707219F24C9D00BCE44F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96D707119F24C9D00BCE44F /* CoreGraphics.framework */; };
 		F96D707419F24C9D00BCE44F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96D707319F24C9D00BCE44F /* UIKit.framework */; };
@@ -22,6 +23,10 @@
 		F96D709419F24C9D00BCE44F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96D707319F24C9D00BCE44F /* UIKit.framework */; };
 		F96D709C19F24C9D00BCE44F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F96D709A19F24C9D00BCE44F /* InfoPlist.strings */; };
 		F96D709E19F24C9D00BCE44F /* KidsiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F96D709D19F24C9D00BCE44F /* KidsiTests.m */; };
+		F98F0A111A0A1A2000CAE861 /* healthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98F0A101A0A1A2000CAE861 /* healthViewController.m */; };
+		F98F0A141A0A1A6900CAE861 /* performanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98F0A131A0A1A6900CAE861 /* performanceViewController.m */; };
+		F98F0A171A0A36E800CAE861 /* TeacherInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98F0A161A0A36E800CAE861 /* TeacherInfoViewController.m */; };
+		F98F623E1A078B4700A900B2 /* FutuLtIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F98F623D1A078B4700A900B2 /* FutuLtIt.ttf */; };
 		F990C5E519F4F4D900CACBB3 /* ParentListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F990C5E419F4F4D900CACBB3 /* ParentListCollectionViewController.m */; };
 		F999960E19F620C000760E89 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999960D19F620C000760E89 /* MultipeerConnectivity.framework */; };
 		F999965619F6425000760E89 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999965519F6425000760E89 /* MobileCoreServices.framework */; };
@@ -31,6 +36,7 @@
 		F9A6FA351A0201BD004AE33C /* TecherInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6FA341A0201BD004AE33C /* TecherInfoViewController.m */; };
 		F9A6FA381A020E17004AE33C /* ParentProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6FA371A020E17004AE33C /* ParentProfileViewController.m */; };
 		F9A7551A1A011C4B001E437F /* SchoolInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A755191A011C4B001E437F /* SchoolInfoViewController.m */; };
+		F9EB6B331A0ADB2B00F6C558 /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EB6B321A0ADB2B00F6C558 /* MyProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F90CE8A41A0C8C1500A7F0A4 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		F90CE8A51A0C8C1500A7F0A4 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		F96D706C19F24C9D00BCE44F /* Kidsi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kidsi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96D706F19F24C9D00BCE44F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F96D707119F24C9D00BCE44F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +72,13 @@
 		F96D709919F24C9D00BCE44F /* KidsiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KidsiTests-Info.plist"; sourceTree = "<group>"; };
 		F96D709B19F24C9D00BCE44F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F96D709D19F24C9D00BCE44F /* KidsiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KidsiTests.m; sourceTree = "<group>"; };
+		F98F0A0F1A0A1A2000CAE861 /* healthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = healthViewController.h; sourceTree = "<group>"; };
+		F98F0A101A0A1A2000CAE861 /* healthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = healthViewController.m; sourceTree = "<group>"; };
+		F98F0A121A0A1A6900CAE861 /* performanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = performanceViewController.h; sourceTree = "<group>"; };
+		F98F0A131A0A1A6900CAE861 /* performanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = performanceViewController.m; sourceTree = "<group>"; };
+		F98F0A151A0A36E800CAE861 /* TeacherInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherInfoViewController.h; sourceTree = "<group>"; };
+		F98F0A161A0A36E800CAE861 /* TeacherInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherInfoViewController.m; sourceTree = "<group>"; };
+		F98F623D1A078B4700A900B2 /* FutuLtIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FutuLtIt.ttf; sourceTree = "<group>"; };
 		F990C5E319F4F4D900CACBB3 /* ParentListCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentListCollectionViewController.h; sourceTree = "<group>"; };
 		F990C5E419F4F4D900CACBB3 /* ParentListCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentListCollectionViewController.m; sourceTree = "<group>"; };
 		F999960D19F620C000760E89 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
@@ -78,6 +93,8 @@
 		F9A6FA371A020E17004AE33C /* ParentProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentProfileViewController.m; sourceTree = "<group>"; };
 		F9A755181A011C4B001E437F /* SchoolInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolInfoViewController.h; sourceTree = "<group>"; };
 		F9A755191A011C4B001E437F /* SchoolInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolInfoViewController.m; sourceTree = "<group>"; };
+		F9EB6B311A0ADB2B00F6C558 /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
+		F9EB6B321A0ADB2B00F6C558 /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +128,7 @@
 		F96D706319F24C9D00BCE44F = {
 			isa = PBXGroup;
 			children = (
+				F98F623D1A078B4700A900B2 /* FutuLtIt.ttf */,
 				F96D707519F24C9D00BCE44F /* Kidsi */,
 				F96D709719F24C9D00BCE44F /* KidsiTests */,
 				F96D706E19F24C9D00BCE44F /* Frameworks */,
@@ -174,6 +192,16 @@
 				F9A6FA341A0201BD004AE33C /* TecherInfoViewController.m */,
 				F9A6FA361A020E17004AE33C /* ParentProfileViewController.h */,
 				F9A6FA371A020E17004AE33C /* ParentProfileViewController.m */,
+				F98F0A0F1A0A1A2000CAE861 /* healthViewController.h */,
+				F98F0A101A0A1A2000CAE861 /* healthViewController.m */,
+				F98F0A121A0A1A6900CAE861 /* performanceViewController.h */,
+				F98F0A131A0A1A6900CAE861 /* performanceViewController.m */,
+				F98F0A151A0A36E800CAE861 /* TeacherInfoViewController.h */,
+				F98F0A161A0A36E800CAE861 /* TeacherInfoViewController.m */,
+				F9EB6B311A0ADB2B00F6C558 /* MyProfileViewController.h */,
+				F9EB6B321A0ADB2B00F6C558 /* MyProfileViewController.m */,
+				F90CE8A41A0C8C1500A7F0A4 /* ChatViewController.h */,
+				F90CE8A51A0C8C1500A7F0A4 /* ChatViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -275,6 +303,7 @@
 				F96D708619F24C9D00BCE44F /* Main_iPad.storyboard in Resources */,
 				F96D708B19F24C9D00BCE44F /* Images.xcassets in Resources */,
 				F96D708319F24C9D00BCE44F /* Main_iPhone.storyboard in Resources */,
+				F98F623E1A078B4700A900B2 /* FutuLtIt.ttf in Resources */,
 				F96D707A19F24C9D00BCE44F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,13 +323,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90CE8A61A0C8C1500A7F0A4 /* ChatViewController.m in Sources */,
+				F98F0A111A0A1A2000CAE861 /* healthViewController.m in Sources */,
 				F96D708919F24C9D00BCE44F /* ViewController.m in Sources */,
 				F96D708019F24C9D00BCE44F /* AppDelegate.m in Sources */,
+				F98F0A141A0A1A6900CAE861 /* performanceViewController.m in Sources */,
+				F98F0A171A0A36E800CAE861 /* TeacherInfoViewController.m in Sources */,
 				F9A6FA381A020E17004AE33C /* ParentProfileViewController.m in Sources */,
 				F9A7551A1A011C4B001E437F /* SchoolInfoViewController.m in Sources */,
 				F9A6FA351A0201BD004AE33C /* TecherInfoViewController.m in Sources */,
 				F96D707C19F24C9D00BCE44F /* main.m in Sources */,
 				F99B595B19F2772E0061DA3E /* MenuViewController.m in Sources */,
+				F9EB6B331A0ADB2B00F6C558 /* MyProfileViewController.m in Sources */,
 				F990C5E519F4F4D900CACBB3 /* ParentListCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

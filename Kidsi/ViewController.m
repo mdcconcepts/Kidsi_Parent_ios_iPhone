@@ -14,11 +14,11 @@
 @end
 
 @implementation ViewController
-
+@synthesize imageViewForVehical,imageViewForStudent;
 - (void)viewDidLoad
 {
    
-   // [UIApplication sharedApplication].statusBarHidden=TRUE;
+   [UIApplication sharedApplication].statusBarHidden=TRUE;
     
     
     
@@ -72,7 +72,7 @@
     if(textField==self.userNameTextField)
         return [self.passwordTextField becomeFirstResponder];
     else
-    return [textField resignFirstResponder];
+        return [textField resignFirstResponder];
 }
 
 -(IBAction)login:(id)sender
@@ -110,7 +110,6 @@
     NSString *content=[NSString stringWithFormat:@"username=%@&password=%@",self.userNameTextField.text,self.passwordTextField.text];
    
    // NSString *content = @"selfusernameTextField.text&field2=Hello";
-    
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://swapnil.mdcconcepts.com/gcm_server_files/checklogin.php"]];
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:[content dataUsingEncoding:NSUTF8StringEncoding]];
@@ -130,8 +129,8 @@
                               options:NSJSONReadingMutableContainers
                               error:&error];
     
-    successUser = [jsonData[@"userexist"] integerValue];
-    successPass = [jsonData[@"code"] integerValue];
+    successUser = [jsonData[@"userexist"]integerValue];
+    successPass = [jsonData[@"code"]integerValue];
     
     data = [data stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSLog(@"%@",data);
@@ -156,9 +155,31 @@
     {
         self.userNameTextField.text=@"";
         self.passwordTextField.text=@"";
-        MenuViewController *m=[self.storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
-        [self.navigationController pushViewController:m animated:YES];
-    
+       
+        [UIView transitionWithView:imageViewForVehical
+                          duration:5.0f
+                           options:UIViewAnimationOptionLayoutSubviews                   animations:^{
+                               
+                               self.imageForStudentLogo.hidden=TRUE;
+                               imageViewForVehical.frame=CGRectMake(imageViewForVehical.frame.origin.x+250, imageViewForVehical.frame.origin.y, imageViewForVehical.frame.size.width, imageViewForVehical.frame.size.height);
+                              // self.imageViewForVehical.alpha=0.4;
+                               
+                           } completion:^(BOOL finished){
+                               // HealthButton.alpha=0.0f;
+                              // [shadowHeathImageView setAlpha:1.0f];
+                              /* [UIView beginAnimations:nil context:nil];
+                               [UIView setAnimationDuration:0.4];
+                               [UIView setAnimationDelay:0.2];
+                               [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+                               imageViewForVehical.frame=CGRectMake(imageViewForVehical.frame.origin.x+300, imageViewForVehical.frame.origin.y, imageViewForVehical.frame.size.width, imageViewForVehical.frame.size.height);
+                               */
+                               
+                               
+                               MenuViewController *m=[self.storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
+                               [self.navigationController pushViewController:m animated:YES];
+                               
+
+                               }];
     }
     else
     {
@@ -170,7 +191,8 @@
     
 }
 
-- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
+{
     /*
     if (textField == self.userNameTextField) { // SSN is an outlet
         NSString *regEx = @"[a-zA-Z]{1}[a-zA-Z0-9]";

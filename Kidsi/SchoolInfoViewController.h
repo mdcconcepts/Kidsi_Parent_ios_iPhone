@@ -10,5 +10,6 @@
 
 @interface SchoolInfoViewController : UIViewController
 - (IBAction)backButton:(id)sender;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *backButtonItem;
 
 @end

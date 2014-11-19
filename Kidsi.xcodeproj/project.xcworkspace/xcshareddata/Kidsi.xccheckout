@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1A63023C-FE26-45B2-BA38-26394C979A77</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Kidsi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B13411DA-B067-481E-A3A5-438A1B249F51</key>
+		<string>Ashok_Kidsi_App_iPhone</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Kidsi.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B13411DA-B067-481E-A3A5-438A1B249F51</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>Ashok_Kidsi_App_iPhone</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B13411DA-B067-481E-A3A5-438A1B249F51</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B13411DA-B067-481E-A3A5-438A1B249F51</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Kidsi</string>
+		</dict>
+	</array>
+</dict>
+</plist>

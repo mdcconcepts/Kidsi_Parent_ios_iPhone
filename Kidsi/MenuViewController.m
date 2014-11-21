@@ -191,7 +191,7 @@
     menuDrawerX=self.view.frame.origin.x-menuDrawerWidth;
     menuDrawer=[[UIView alloc]initWithFrame:CGRectMake(menuDrawerX,self.view.frame.origin.y+statusBarHeight , menuDrawerWidth, self.view.frame.size.height-statusBarHeight)];
     
-    
+    //NSLog(@"mx=%f,my=%f,mw=%f,mh=%f",menuDrawer.frame.origin.x,menuDrawer.frame.origin.y,menuDrawer.frame.size.width,menuDrawer.frame.size.height);
     menuDrawer.backgroundColor=[UIColor colorWithRed:0.15f green:0.25f blue:0.6f alpha:0.8f];
     
     closeRecognizer=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleSwipe:)];

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MenuViewController : UIViewController<UIGestureRecognizerDelegate,UINavigationBarDelegate>
+@interface MenuViewController : UIViewController<UIGestureRecognizerDelegate,UINavigationBarDelegate,UIActionSheetDelegate>
 {
     UIView *menuDrawer;
     UIImageView *imageViewforSchoolInfo;
@@ -48,4 +48,9 @@
 -(IBAction)health:(id)sender;
 -(IBAction)performance:(id)sender;
 -(IBAction)chat:(id)sender;
+
+- (IBAction)setting:(id)sender;
+
+
+
 @end

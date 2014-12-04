@@ -15,6 +15,13 @@
 #import "performanceViewController.h"
 #import "TeacherInfoViewController.h"
 #import "MyProfileViewController.h"
+#import "NotificationViewController.h"
+#import "KidProfileViewController.h"
+#import "NotificationViewController.h"
+#import "PrivacyPolicyViewController.h"
+#import "AboutUsViewController.h"
+
+
 
 @interface MenuViewController ()
 {
@@ -299,6 +306,9 @@
 
 -(void)menu
 {
+    //Notification view
+
+    
     SchoolInfoViewController *m=[self.storyboard instantiateViewControllerWithIdentifier:@"SchoolInfoViewController"];
    
     [self.navigationController pushViewController:m animated:YES];
@@ -393,31 +403,7 @@
     }
     
     
-    //if(liveStreamButton.selected)
-    //    liveStreamButton.selected=FALSE;
-    /*
-    [UIView transitionWithView:liveStreamButton
-                      duration:0.3f
-                       options:UIViewAnimationOptionTransitionCrossDissolve                   animations:^{
-                           
-                           liveStreamButton.frame=CGRectMake(liveStreamButton.frame.origin.x, liveStreamButton.frame.origin.y-25, liveStreamButton.frame.size.width, liveStreamButton.frame.size.height);
-                           //self.shadowHeathImageView.alpha=0.4;
-                           // HealthButton.imageView.image=[UIImage imageNamed:@"health.png"];
-                           
-                       } completion:^(BOOL finished){
-                           // HealthButton.alpha=0.0f;
-                           //[self.shadowHeathImageView setAlpha:1.0f];
-                           [UIView beginAnimations:nil context:nil];
-                           [UIView setAnimationDuration:0.4];
-                           [UIView setAnimationDelay:0.2];
-                           [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-                           liveStreamButton.frame=CGRectMake(liveStreamButton.frame.origin.x, liveStreamButton.frame.origin.y+25, liveStreamButton.frame.size.width, liveStreamButton.frame.size.height);
-                           
-                           
-                       }];
-     */
-
-    //imageView.image=[UIImage imageNamed:@"livecamerabigimg.png"];
+  
 }
 
 -(IBAction)health:(id)sender
@@ -455,30 +441,7 @@
 -(IBAction)performance:(id)sender
 {
     
-    /*if(performanceButton.selected)
-        performanceButton.selected=FALSE;
-    
-    [UIView transitionWithView:performanceButton
-                      duration:0.3f
-                       options:UIViewAnimationOptionTransitionCrossDissolve                   animations:^{
-                           
-                           performanceButton.frame=CGRectMake(performanceButton.frame.origin.x, performanceButton.frame.origin.y-25, performanceButton.frame.size.width, performanceButton.frame.size.height);
-                           //self.shadowHeathImageView.alpha=0.4;
-                           // HealthButton.imageView.image=[UIImage imageNamed:@"health.png"];
-                           
-                       } completion:^(BOOL finished){
-                           // HealthButton.alpha=0.0f;
-                           //[self.shadowHeathImageView setAlpha:1.0f];
-                           [UIView beginAnimations:nil context:nil];
-                           [UIView setAnimationDuration:0.4];
-                           [UIView setAnimationDelay:0.2];
-                           [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-                           performanceButton.frame=CGRectMake(performanceButton.frame.origin.x, performanceButton.frame.origin.y+25, performanceButton.frame.size.width, performanceButton.frame.size.height);
-                           
-                           
-                           }];*/
-
-    // imageView.image=[UIImage imageNamed:@"performancebigimg.png"];
+  
 }
 
 -(IBAction)chat:(id)sender
@@ -521,6 +484,67 @@
   //  ParentListCollectionViewController *parentListCollectionViewController=[[ParentListCollectionViewController alloc]init];
    // [self presentViewController:parentListCollectionViewController animated:YES completion:nil];
 }
+
+- (IBAction)setting:(id)sender
+{
+    
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Setting"
+                                                             delegate:self
+                                                    cancelButtonTitle:nil
+                                               destructiveButtonTitle:nil
+                                                    otherButtonTitles:@"Navigation", @"Privacy Policy", @"About Application", nil];
+    
+    
+    NSLog(@" before x=%f,y=%f,w=%f,h=%f",actionSheet.frame.origin.x,actionSheet.frame.origin.y,actionSheet.frame.size.width,actionSheet.frame.size.height);
+   // actionSheet.actionSheetStyle=UIActionSheetStyleBlackTranslucent;
+    //[actionSheet setBounds:CGRectMake(0, 0, 200, 200)];
+    [actionSheet showFromRect:CGRectMake(0,64,actionSheet.frame.size.width,actionSheet.frame.size.height) inView:self.view animated:YES];
+    
+    NSLog(@" after x=%f,y=%f,w=%f,h=%f",actionSheet.frame.origin.x,actionSheet.frame.origin.y,actionSheet.frame.size.width,actionSheet.frame.size.height);
+    
+
+}
+
+
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 0)
+    {
+        NotificationViewController *notificationViewController=[self.storyboard instantiateViewControllerWithIdentifier:@"NotificationViewController"];
+        // privacyPolicyViewController.navigationControllerTitle=self.navigationItem.title;
+        [self.navigationController pushViewController:notificationViewController animated:YES];
+        
+        
+    }
+    else if(buttonIndex == 1)
+    {
+        PrivacyPolicyViewController *privacyPolicyViewController=[self.storyboard instantiateViewControllerWithIdentifier:@"PrivacyPolicyViewController"];
+       // privacyPolicyViewController.navigationControllerTitle=self.navigationItem.title;
+        [self.navigationController pushViewController:privacyPolicyViewController animated:YES];
+    }
+    else if(buttonIndex == 2)
+    {
+        
+        AboutUsViewController *aboutUs=[self.storyboard instantiateViewControllerWithIdentifier:@"AboutUsViewController"];
+       // aboutUs.navigationControllerTitle=self.navigationItem.title;
+       [self.navigationController pushViewController:aboutUs animated:YES];
+        
+        
+        
+        NSLog(@"Update Button Clicked");
+    }
+    else if(buttonIndex == 3)
+    {
+        NSLog(@"Duplicate Button Clicked");
+    }
+    else if(buttonIndex == 4)
+    {
+        NSLog(@"Cancel Button Clicked");
+    }
+    
+}
+
 
 
 -(IBAction)MenuButon:(id)sender

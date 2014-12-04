@@ -36,6 +36,10 @@
 		F9A6FA351A0201BD004AE33C /* TecherInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6FA341A0201BD004AE33C /* TecherInfoViewController.m */; };
 		F9A6FA381A020E17004AE33C /* ParentProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6FA371A020E17004AE33C /* ParentProfileViewController.m */; };
 		F9A7551A1A011C4B001E437F /* SchoolInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A755191A011C4B001E437F /* SchoolInfoViewController.m */; };
+		F9DDE3151A2ECC3500088B33 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DDE3141A2ECC3500088B33 /* NotificationViewController.m */; };
+		F9DDE3181A2EFEBF00088B33 /* KidProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DDE3171A2EFEBF00088B33 /* KidProfileViewController.m */; };
+		F9DDE31B1A2F147D00088B33 /* PrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DDE31A1A2F147D00088B33 /* PrivacyPolicyViewController.m */; };
+		F9DDE3211A2F3BFD00088B33 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DDE3201A2F3BFD00088B33 /* AboutUsViewController.m */; };
 		F9EB6B331A0ADB2B00F6C558 /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EB6B321A0ADB2B00F6C558 /* MyProfileViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +97,14 @@
 		F9A6FA371A020E17004AE33C /* ParentProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentProfileViewController.m; sourceTree = "<group>"; };
 		F9A755181A011C4B001E437F /* SchoolInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolInfoViewController.h; sourceTree = "<group>"; };
 		F9A755191A011C4B001E437F /* SchoolInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolInfoViewController.m; sourceTree = "<group>"; };
+		F9DDE3131A2ECC3500088B33 /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		F9DDE3141A2ECC3500088B33 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		F9DDE3161A2EFEBF00088B33 /* KidProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KidProfileViewController.h; sourceTree = "<group>"; };
+		F9DDE3171A2EFEBF00088B33 /* KidProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KidProfileViewController.m; sourceTree = "<group>"; };
+		F9DDE3191A2F147D00088B33 /* PrivacyPolicyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyPolicyViewController.h; sourceTree = "<group>"; };
+		F9DDE31A1A2F147D00088B33 /* PrivacyPolicyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyPolicyViewController.m; sourceTree = "<group>"; };
+		F9DDE31F1A2F3BFD00088B33 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		F9DDE3201A2F3BFD00088B33 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
 		F9EB6B311A0ADB2B00F6C558 /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
 		F9EB6B321A0ADB2B00F6C558 /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +214,14 @@
 				F9EB6B321A0ADB2B00F6C558 /* MyProfileViewController.m */,
 				F90CE8A41A0C8C1500A7F0A4 /* ChatViewController.h */,
 				F90CE8A51A0C8C1500A7F0A4 /* ChatViewController.m */,
+				F9DDE3131A2ECC3500088B33 /* NotificationViewController.h */,
+				F9DDE3141A2ECC3500088B33 /* NotificationViewController.m */,
+				F9DDE3161A2EFEBF00088B33 /* KidProfileViewController.h */,
+				F9DDE3171A2EFEBF00088B33 /* KidProfileViewController.m */,
+				F9DDE3191A2F147D00088B33 /* PrivacyPolicyViewController.h */,
+				F9DDE31A1A2F147D00088B33 /* PrivacyPolicyViewController.m */,
+				F9DDE31F1A2F3BFD00088B33 /* AboutUsViewController.h */,
+				F9DDE3201A2F3BFD00088B33 /* AboutUsViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -329,10 +349,14 @@
 				F90CE8A61A0C8C1500A7F0A4 /* ChatViewController.m in Sources */,
 				F98F0A111A0A1A2000CAE861 /* healthViewController.m in Sources */,
 				F96D708919F24C9D00BCE44F /* ViewController.m in Sources */,
+				F9DDE3181A2EFEBF00088B33 /* KidProfileViewController.m in Sources */,
+				F9DDE3211A2F3BFD00088B33 /* AboutUsViewController.m in Sources */,
 				F96D708019F24C9D00BCE44F /* AppDelegate.m in Sources */,
+				F9DDE31B1A2F147D00088B33 /* PrivacyPolicyViewController.m in Sources */,
 				F98F0A141A0A1A6900CAE861 /* performanceViewController.m in Sources */,
 				F98F0A171A0A36E800CAE861 /* TeacherInfoViewController.m in Sources */,
 				F9A6FA381A020E17004AE33C /* ParentProfileViewController.m in Sources */,
+				F9DDE3151A2ECC3500088B33 /* NotificationViewController.m in Sources */,
 				F9A7551A1A011C4B001E437F /* SchoolInfoViewController.m in Sources */,
 				F9A6FA351A0201BD004AE33C /* TecherInfoViewController.m in Sources */,
 				F96D707C19F24C9D00BCE44F /* main.m in Sources */,
@@ -483,7 +507,7 @@
 				GCC_PREFIX_HEADER = "Kidsi/Kidsi-Prefix.pch";
 				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "Kidsi/Kidsi-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -502,7 +526,7 @@
 				GCC_PREFIX_HEADER = "Kidsi/Kidsi-Prefix.pch";
 				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "Kidsi/Kidsi-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
